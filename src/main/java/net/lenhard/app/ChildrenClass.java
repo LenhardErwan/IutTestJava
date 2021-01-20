@@ -3,6 +3,7 @@ package net.lenhard.app;
 import java.util.logging.Logger;
 
 public class ChildrenClass extends PrimaryClass {
+	private static final Logger LOGGER = Logger.getLogger(ChildrenClass.class.getName());
 
 	public ChildrenClass() {
 		super();
@@ -10,7 +11,7 @@ public class ChildrenClass extends PrimaryClass {
 
 	@Override
 	public void showText() {
-		Logger.getLogger(ChildrenClass.class.getName()).info("Ceci est la classe enfant");
+		LOGGER.info("Ceci est la classe enfant");
 	}
 	
 }
